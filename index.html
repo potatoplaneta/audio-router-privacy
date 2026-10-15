@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Audio Router privacy policy: local audio processing, saved profiles, purchases, permissions, and your privacy choices.">
+    <meta name="color-scheme" content="light">
+    <title>Privacy Policy · Audio Router</title>
+    <link rel="canonical" href="https://potatoplaneta.github.io/audio-router-privacy/">
+    <link rel="icon" type="image/png" sizes="256x256" href="app-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#policy">Skip to privacy policy</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Audio Router privacy policy home">
+        <img src="app-icon.png" alt="" width="36" height="36">
+        <span>Audio Router</span>
+      </a>
+      <a class="header-link" href="#contact">Privacy questions <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="policy">
+      <div class="introduction">
+        <p class="eyebrow">YOUR AUDIO. YOUR MAC.</p>
+        <h1>Privacy Policy</h1>
+        <p class="lead">Your sound belongs on your Mac. This page explains how Audio Router processes audio, what it stores, and how you stay in control.</p>
+        <p class="updated">Effective and last updated: <time datetime="2026-10-15">October 15, 2026</time></p>
+      </div>
+      <aside class="overview" aria-label="Privacy at a glance">
+        <p>At a glance</p>
+        <ul>
+          <li>Your audio is processed on your Mac, without recording or uploading it.</li>
+          <li>Profiles, routes, and settings are stored locally.</li>
+          <li>No developer-operated backend, advertising, or third-party analytics SDKs.</li>
+          <li>Apple handles trial activation, purchases, and purchase restoration.</li>
+        </ul>
+      </aside>
+      <nav class="contents" aria-label="Policy sections">
+        <a href="#audio">Audio processing</a>
+        <a href="#local-data">Local data</a>
+        <a href="#purchases">Purchases</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#your-choices">Your choices</a>
+        <a href="#website">Website and support</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <section id="scope">
+        <h2>1. Who this policy covers</h2>
+        <p>This policy applies to the Audio Router macOS app and its privacy policy and support website. Audio Router is maintained by <a href="https://github.com/potatoplaneta">PotatoPlanetStudios</a>. You do not need an Audio Router account to use the app.</p>
+        <p>The app does not send your audio, routing profiles, device choices, or application activity to the developer. We do not sell personal data, use advertising trackers, or include third-party analytics SDKs.</p>
+      </section>
+      <section id="audio">
+        <h2>2. Audio stays on your Mac</h2>
+        <p>Audio Router uses macOS audio services to capture audio from selected applications or input devices and route it to the outputs you choose. Short audio buffers are held in memory for routing, metering, resampling, and any filters or other processing you enable. Captured audio is not recorded to disk or transmitted over the network by Audio Router.</p>
+        <p>The app reads running-application information and audio-device information to discover sources, show names and icons, display audio activity, and reconnect saved routes. This can include application names, bundle identifiers, process identifiers, device names and identifiers, channel counts, and sample rates. This information is used locally.</p>
+        <p>When you route sound to another application, virtual audio device, or network-capable output, that destination may record or transmit the audio under its own settings. Audio Router does not control the privacy practices of the applications or output devices you select.</p>
+      </section>
+      <section id="local-data">
+        <h2>3. Data stored on your Mac</h2>
+        <p>Audio Router saves the information needed to restore your setup. This can include:</p>
+        <ul>
+          <li>Named profiles, source applications, input and output device identifiers, and connections between them.</li>
+          <li>Application identifiers, paths, and read-only security-scoped bookmarks for applications you select in a macOS file picker.</li>
+          <li>Volume, mute, filter, delay, ducking, feedback-protection, and latency settings.</li>
+          <li>Graph layout, appearance, language, onboarding state, and other preferences.</li>
+          <li>Recovery copies of configuration files preserved during migration or after a file cannot be read.</li>
+          <li>Local purchase and trial records, as described below.</li>
+        </ul>
+        <p>Profiles are stored in an <code>AudioRouter</code> folder within the app’s local Application Support directory. macOS stores preferences separately. Audio Router does not provide its own cloud synchronization.</p>
+        <p>Local diagnostic messages may appear in macOS logs; macOS manages their retention. Audio Router does not automatically send its logs or configuration to us. Review any diagnostic information you choose to share with support.</p>
+      </section>
+      <section id="purchases">
+        <h2>4. App Store purchases and trial access</h2>
+        <p>Apple processes the manually started 7-day trial, Lifetime Unlock purchase, refunds, and purchase restoration through StoreKit and the App Store. Audio Router does not receive your payment card details or Apple Account password.</p>
+        <p>The app reads Apple-verified transaction information to determine access. A local checkpoint in the macOS Keychain can contain trial and lifetime transaction identifiers, purchase dates, the most recently observed date, and the last successful verification date. These records support access checks, offline use, and protection against clock changes. The app does not request Keychain synchronization for this checkpoint.</p>
+        <p>Audio Router does not upload these records to the developer. Apple handles its own account and transaction data under <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>. Apple may make App Store sales reports or diagnostics available to developers through Apple’s services and your Apple privacy settings.</p>
+      </section>
+      <section id="permissions">
+        <h2>5. macOS permissions</h2>
+        <ul>
+          <li><strong>System audio capture:</strong> allows the app to capture, meter, and route sound from other applications. Onboarding helps you grant this access.</li>
+          <li><strong>Microphone and audio input:</strong> allows routing from an input device you add as a source.</li>
+          <li><strong>Selected application files:</strong> read-only access and local security-scoped bookmarks help restore the identity and icon of applications you choose in the file picker.</li>
+        </ul>
+        <p>You can review or revoke audio permissions in System Settings → Privacy &amp; Security. The names of the microphone and system audio recording categories vary by macOS version. Revoking access stops the features that depend on that permission. Permission checks and related controls are also available in Audio Router’s Settings → Privacy.</p>
+      </section>
+      <section id="your-choices">
+        <h2>6. Retention, deletion, and your choices</h2>
+        <p>Saved profiles and preferences remain on your Mac until you change or delete them. Removing a route, source, or profile updates the active configuration, but does not erase any older recovery copies. Uninstalling the app alone may leave local support files, preferences, or Keychain records.</p>
+        <ul>
+          <li><strong>Stop audio processing:</strong> disconnect routes, remove sources, quit Audio Router, or revoke the corresponding macOS permission.</li>
+          <li><strong>Remove saved profiles and routes:</strong> delete them in the routing panel. Disconnecting routes alone is not a complete deletion of app data.</li>
+          <li><strong>Erase profile files and recovery copies:</strong> quit the app, then remove the <code>AudioRouter</code> folder in its Application Support directory. For sandboxed builds, this is normally <code>~/Library/Containers/com.PotatoPlanetStudios.AudioRouter/Data/Library/Application Support/AudioRouter/</code>. Other builds may use <code>~/Library/Application Support/AudioRouter/</code>.</li>
+          <li><strong>Preferences:</strong> macOS stores these under the app’s <code>com.PotatoPlanetStudios.AudioRouter</code> preferences domain, separately from profile files. Contact support for help with a complete local reset, including preferences.</li>
+          <li><strong>Purchase checkpoint:</strong> the <code>com.PotatoPlanetStudios.AudioRouter.entitlements</code> Keychain record can remain after app removal. Contact us for help removing residual local purchase data. Removing local records does not erase Apple’s transaction history or restart a previously used trial; restoring access may require contacting Apple’s services.</li>
+        </ul>
+        <p>The developer cannot access or remotely delete information held only on your Mac. Backups you make may contain copies of local app data; manage those copies through your backup provider.</p>
+      </section>
+      <section id="website">
+        <h2>7. This website and support requests</h2>
+        <p>These static pages are hosted by GitHub Pages. We have added no analytics scripts, tracking cookies, external fonts, or contact forms. GitHub receives information needed to serve the pages, such as your IP address and request metadata, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+        <p>If you email <a href="mailto:potatoplanet.studios@gmail.com">potatoplanet.studios@gmail.com</a>, we receive your email address, message, and any attachments you choose to send. We use them to respond to your request and troubleshoot problems. Correspondence may remain in the support mailbox until deleted; you can request deletion of messages we control. Our Gmail mailbox is provided by Google, whose processing is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Email services may retain copies under their own policies.</p>
+        <p>GitHub Issues are public and require a GitHub account. Your username and issue content are visible to others and remain on GitHub until removed, subject to GitHub’s retention policies. You may edit or delete content where GitHub permits, or ask us for help removing content we control.</p>
+        <p><strong>Do not post audio recordings, sensitive personal information, private file paths, payment details, or purchase records in a public issue.</strong> Use email for private requests and share only what is needed to answer your question.</p>
+      </section>
+      <section id="changes">
+        <h2>8. Changes to this policy</h2>
+        <p>We may update this policy when the app or its privacy practices change. The current version will remain at this address with the updated date shown above.</p>
+      </section>
+      <section id="contact" class="contact">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>9. Privacy questions</h2>
+        <p>For questions about this policy, privacy choices, or deleting local data, email <a href="mailto:potatoplanet.studios@gmail.com?subject=Audio%20Router%20privacy">potatoplanet.studios@gmail.com</a>. General app help is available on our <a href="support.html">support page</a>.</p>
+        <a class="contact-link" href="https://github.com/potatoplaneta/audio-router-privacy/issues/new?title=Privacy%20question">Open a privacy question on GitHub <span aria-hidden="true">↗</span></a>
+        <p class="contact-note">GitHub Issues are public. Use email for private requests.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <span>Audio Router · Privacy Policy</span>
+      <div class="footer-links">
+        <a href="support.html">Support <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/potatoplaneta/audio-router-privacy">View page source <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
