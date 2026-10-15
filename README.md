@@ -11,7 +11,7 @@ Public privacy policy and support pages for the Audio Router macOS app by Potato
 
 GitHub Pages serves the root of `main`. No build step, dependencies, JavaScript, external fonts, or analytics are required. `.nojekyll` enables static hosting. Push changes to `main` to publish.
 
-`styles.css` is unchanged from [Wheel Launcher’s privacy and support site](https://github.com/potatoplaneta/wheel-launcher-privacy). `app-icon.png` is Audio Router’s 256-pixel app icon. Update the effective dates when privacy practices change.
+`styles.css` is unchanged from [Wheel Launcher’s privacy and support site](https://github.com/potatoplaneta/wheel-launcher-privacy). The Wave Patch artwork (selected concept #8) is exported from the app’s vector master: `app-icon.png` (256 px), `app-icon-512.png` (512 px), PNG favicons (16/32 px), `favicon.svg`, and the 180 px touch icon. Both pages use versioned image URLs to refresh the former cable artwork in browser caches. Update the effective dates when privacy practices change.
 
 For local preview, run `python3 -m http.server 8788 --bind 127.0.0.1`, then open http://127.0.0.1:8788/.
 

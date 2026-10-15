@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="80 80 864 864" fill="none">
+  <defs>
+    <linearGradient id="tile" x1="80" y1="80" x2="944" y2="944" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E1F26"/>
+      <stop offset="1" stop-color="#15161C"/>
+    </linearGradient>
+    <linearGradient id="active" x1="0" y1="190" x2="0" y2="834" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38EAF2"/>
+      <stop offset="1" stop-color="#34DBEF"/>
+    </linearGradient>
+    <linearGradient id="inactive" x1="0" y1="190" x2="0" y2="834" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BD8AF8"/>
+      <stop offset="1" stop-color="#A47CF2"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="306" y1="306" x2="718" y2="718" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30CBEF"/>
+      <stop offset="0.52" stop-color="#7799F3"/>
+      <stop offset="1" stop-color="#AD6CF1"/>
+    </linearGradient>
+  </defs>
+  <rect x="80" y="80" width="864" height="864" rx="176" fill="url(#tile)"/>
+  <g stroke-width="40">
+    <circle cx="306" cy="306" r="95" stroke="url(#active)"/>
+    <circle cx="718" cy="718" r="95" stroke="url(#active)"/>
+    <circle cx="718" cy="306" r="95" stroke="url(#inactive)"/>
+    <circle cx="306" cy="718" r="95" stroke="url(#inactive)"/>
+  </g>
+  <g fill="#3D3F4E">
+    <circle cx="718" cy="306" r="40"/>
+    <circle cx="306" cy="718" r="40"/>
+  </g>
+  <path d="M306 271 C389 271 397 449 438 486 C457 505 474 491 494 477 C520 456 549 472 570 495 C620 547 651 668 728 684 A35 35 0 0 1 708 752 C616 733 588 602 532 554 C521 545 511 562 493 570 C463 585 435 564 416 540 C365 477 352 357 304 341 A35 35 0 0 1 306 271 Z" fill="url(#wave)"/>
+</svg>
